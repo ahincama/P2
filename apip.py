@@ -1,13 +1,13 @@
 #!/usr/bin/python
 from flask import Flask, request
-from m09_model_P2 import predict_precio
+from m09_model_P2 import predict_price
 
 app = Flask(__name__)
 
 @app.route('/predict', methods=['GET'])
 def preciopredict():
     return {
-         "result": predict_precio(request.args.get('feat'))
+         "result": predict_price(request.args.get('feat'))
         }, 200
 
 
