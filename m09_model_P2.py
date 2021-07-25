@@ -29,7 +29,7 @@ if __name__ == "__main__":
 
         feat = sys.argv[1]
 
-        precio = predict_precio(feat)
+        precio = predict_price(feat)
         
         print(feat)
         print('Precio Probable: ', precio)
